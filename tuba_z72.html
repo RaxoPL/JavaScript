@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8">
-<title> Przykład użycia pętli </title>
-<script language="JavaScript">
-var x=prompt("Podaj szerokosc a=","");
+ <meta charset="utf-8">
+ <title>zad72</title>
+ <script language="JavaScript">
+var x=prompt("podaj wysokosc a=","");
 var a_tub=x;
-var y=prompt("Podaj wysokosc b=","");
+var y=prompt("podaj szerokosc b=","");
 var b_tub=y;
-for ( var i=1; i<=(b_tub-2); i++)
-{
-  var wiersz_tub="*";
-for ( var j=1; j<=(a_tub-2); j++)
-{
-  wiersz_tub=wiersz_tub+"&nbsp&nbsp";
-}
-  wiersz_tub=wiersz_tub+"*";
-  document.write(wiersz_tub+"<br>");
-}
-for ( var i=<=a_tub; i++)
-{
-  document.write("*");
-}
-  document.write("<br>");
-</script>
+ for ( var i=1; i<=b_tub; i++)
+ {
+ document.write("*");
+ }
+
+
+ document.write("<br>");
+    var wiersz_tub="*";
+    for ( var j=1; j<=(b_tub-2); j++)
+ {
+    wiersz_tub=wiersz_tub+"&nbsp&nbsp";
+ }
+ wiersz_tub=wiersz_tub+"*";
+ for ( var j=1; j<=(a_tub-2); j++)
+ {
+ document.write(wiersz_tub);
+ document.write("<br>");
+ }
+
+
+
+ for ( var i=1; i<=b_tub; i++)
+ {
+ document.write("*");
+ }
+ </script>
 </head>
 <body>
 </body>

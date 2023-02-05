@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="utf-8">
+ <title>zad73</title>
+ <script language="JavaScript">
+var x=prompt("podaj Nazwisko=","");
+var b_tub=x.length;
+var y=prompt("podaj Imie=","");
+var a_tub=y.length;
+b_tub=b_tub%4+5;
+a_tub=a_tub%6+20;
+ for ( var i=1; i<=b_tub; i++)
+ {
+ document.write("*");
+ }
+
+
+ document.write("<br>");
+    var wiersz_tub="*";
+    for ( var j=1; j<=(b_tub-2); j++)
+ {
+    wiersz_tub=wiersz_tub+"&nbsp&nbsp";
+ }
+ wiersz_tub=wiersz_tub+"*";
+ for ( var j=1; j<=(a_tub-2); j++)
+ {
+ document.write(wiersz_tub);
+ document.write("<br>");
+ }
+ for ( var i=1; i<=b_tub; i++)
+ {
+ document.write("*");
+ }
+ </script>
+</head>
+<body>
+</body>
+</html>
